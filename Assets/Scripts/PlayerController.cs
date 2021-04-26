@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour {
 	[HideInInspector]
 	//public characterMove cM;
 	//[HideInInspector]
-	public PlayerInput pI;
+	//public PlayerInput pI;
 	//[HideInInspector]
 	/*public characterHealth cH;
 	[HideInInspector]*/
@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
 	
 	void Awake () {
 		//cM=GetComponent<characterMove>();
-		pI=GetComponent<PlayerInput>();
+		//pI=GetComponent<PlayerInput>();
 		//cH=GetComponent<characterHealth>();
 		//weaponManager=GetComponent<PlayerWeaponManager>();
 	}

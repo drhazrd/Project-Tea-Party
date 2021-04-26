@@ -72,10 +72,9 @@ GameObject:
   - component: {fileID: 5385745297295286758}
   - component: {fileID: 1854379141}
   - component: {fileID: 1854379142}
-  - component: {fileID: 1854379143}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,8 +106,8 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.1
-  m_Radius: 0.5
+  m_Height: 1.25
+  m_Radius: 0.2
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -130,37 +129,30 @@ MonoBehaviour:
   distFromGround: 0.1
   jumpForce: 2
   controller: {fileID: 0}
+  inputVector: {x: 0, y: 0}
+  moveDirection: {x: 0, y: 0, z: 0}
   gravityScale: 0.5
   anim: {fileID: 0}
   pivey: {fileID: 3791122597768049623}
   rotateSpeed: 25
   model: {fileID: 3500140463861624984}
   player1: 1
-  player2: 0
-  player3: 0
-  player4: 0
   playerSkin: {fileID: 0}
-  playerSkinMat: []
-  playerCoronaMat: []
+  playerSkinMat:
+  - {fileID: 2100000, guid: 750e3b44960865b4ea8271a8fdfb9d77, type: 2}
+  - {fileID: 2100000, guid: 26f433159cd63b84d96febd2600b597e, type: 2}
+  playerCoronaMat:
+  - {fileID: -4740866918696808673, guid: 5555f607a08622c45a379c7ac2187059, type: 3}
+  - {fileID: -4740866918696808673, guid: b4f20fa704dbb9443bf9c8b16a04ab62, type: 3}
+  - {fileID: 7952672690730763922, guid: 5555f607a08622c45a379c7ac2187059, type: 3}
+  - {fileID: -8725624188449797229, guid: b4f20fa704dbb9443bf9c8b16a04ab62, type: 3}
   useController: 0
-  playerCorona: {fileID: 0}
   knockBackForce: 5
-  knockBackTime: 2
+  knockBackTime: 0.2
+  skinIndex: 0
   skinSwitch: 1
---- !u!114 &1854379143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5385745297295286754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d501bcf12c4255a4da33f8a8189e367e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pI: {fileID: 0}
-  pID: 0
+  canMove: 1
+  pInput: {fileID: 0}
 --- !u!1001 &4354004662899057082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -168,11 +160,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2760755075334358098}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: b5278246c6e8d024db494029f8855160,
-        type: 3}
-      propertyPath: m_Name
-      value: Animated Human
-      objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: b5278246c6e8d024db494029f8855160,
         type: 3}
       propertyPath: m_Controller
@@ -248,6 +235,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: b5278246c6e8d024db494029f8855160,
+        type: 3}
+      propertyPath: m_Name
+      value: Animated Human
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936731115384413758, guid: b5278246c6e8d024db494029f8855160,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8615392de9838be418ef1eb67d5dbac5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5278246c6e8d024db494029f8855160, type: 3}
 --- !u!4 &8725228272187050656 stripped
