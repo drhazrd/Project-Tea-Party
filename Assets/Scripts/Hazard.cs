@@ -12,6 +12,7 @@ public class Hazard : MonoBehaviour
             Vector3 hitDirection = other.transform.position - transform.position;
             hitDirection = hitDirection.normalized;
             other.GetComponent<playerMotor>().Knockback(hitDirection);
+            //GameManager._gameManager.AddGold(1);
         }
     }
 }

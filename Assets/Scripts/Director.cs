@@ -2,9 +2,10 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class Director2 : MonoBehaviour
+public class Director : MonoBehaviour
 {
-    /*	//public Damageable player;
+        public Damagable player;
+    /*	
         public Text biffedGUI;
         public Text healthGUI;
         public Transform gameOverGUI;
